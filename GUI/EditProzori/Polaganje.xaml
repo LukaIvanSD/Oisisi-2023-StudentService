@@ -1,0 +1,56 @@
+﻿<Window x:Class="GUI.Polaganje"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        xmlns:ns="clr-namespace:GUI.Localization"
+        mc:Ignorable="d"
+        PreviewKeyDown="Window_PreviewKeyDown"
+        Title="{ns:Loc Unos ocene}" Height="450" Width="400">
+    <Window.Resources>
+        <ControlTemplate x:Key="ValidationTemplate">
+            <StackPanel>
+                <!-- Placeholder for the TextBox itself -->
+                <AdornedElementPlaceholder x:Name="textBox" />
+                <TextBlock Text="{Binding [0].ErrorContent}" Foreground="Red" />
+            </StackPanel>
+
+        </ControlTemplate>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Label Content ="{ns:Loc Sifra*}" Margin="50,0,0,0" Grid.Row="0" VerticalAlignment="Center">
+        </Label>
+        <TextBox Text="{Binding Path=predmet.Sifra, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, RelativeSource={RelativeSource AncestorType=local:Polaganje}}" Background="#CCCCCC" Foreground="White" IsReadOnly="True" IsHitTestVisible="False" x:Name="textBox1" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" MinWidth="100" Height="20" Validation.ErrorTemplate="{StaticResource ValidationTemplate}"/>
+        <Label Content ="{ns:Loc Naziv*}" Margin="50,0,0,0" Grid.Row="1" VerticalAlignment="Center">
+        </Label>
+        <TextBox Text="{Binding Path=predmet.Naziv, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, RelativeSource={RelativeSource AncestorType=local:Polaganje}}" Background="#CCCCCC" Foreground="White" IsReadOnly="True" IsHitTestVisible="False" x:Name="textBox2" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" MinWidth="100" Height="20" Validation.ErrorTemplate="{StaticResource ValidationTemplate}"/>
+        <Label Content ="{ns:Loc Ocena*}" Margin="50,0,0,0" Grid.Row="2" VerticalAlignment="Center">
+        </Label>
+        <ComboBox SelectedValue="{Binding Path=predmet.Ocena, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, RelativeSource={RelativeSource AncestorType=local:Polaganje}}" x:Name="comboBox1" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Width="100" Height="23" SelectedIndex="0" SelectedValuePath="Content" Validation.ErrorTemplate="{StaticResource ValidationTemplate}">
+            <ComboBoxItem Content="6"></ComboBoxItem>
+            <ComboBoxItem Content="7"></ComboBoxItem>
+            <ComboBoxItem Content="8"></ComboBoxItem>
+            <ComboBoxItem Content="9"></ComboBoxItem>
+            <ComboBoxItem Content="10"></ComboBoxItem>
+        </ComboBox>
+        <Label Content ="{ns:Loc Datum*}" Margin="50,0,0,0" Grid.Row="3" VerticalAlignment="Center">
+        </Label>
+        <TextBox Text="{Binding Path=predmet.Datum, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, RelativeSource={RelativeSource AncestorType=local:Polaganje}}" x:Name="textBox3" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" MinWidth="100" Height="20" Validation.ErrorTemplate="{StaticResource ValidationTemplate}"/>
+        <Button Content ="{ns:Loc Confirm}" x:Name="Add"  Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" Padding="10,0,10,2" Margin="0,40,70,10" Click="ADD">
+        </Button>
+        <Button Content ="{ns:Loc Cancel}" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" Padding="10,0,10,2" Margin="50,40,0,10" Click="Close">
+        </Button>
+    </Grid>
+</Window>

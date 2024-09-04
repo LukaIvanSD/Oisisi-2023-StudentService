@@ -1,0 +1,230 @@
+﻿<Window x:Class="GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        xmlns:ns="clr-namespace:GUI.Localization"
+        mc:Ignorable="d"
+         PreviewKeyDown="Window_PreviewKeyDown"
+    Title="{ns:Loc Studentska služba}" Height="450" Width="800" >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="800*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Border  BorderBrush="black" BorderThickness="2" HorizontalAlignment="Stretch">
+            <Menu>
+                <MenuItem Header="{ns:Loc File}" Padding="5" FontWeight="DemiBold">
+                    <MenuItem Header="{ns:Loc New}"  InputGestureText="Ctrl+N" Click="New">
+                        <MenuItem.Icon>
+                            <Image Source="/Slike/PLUS.jpg" Width="16" Height="16" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="{ns:Loc Save}" InputGestureText="Ctrl+S" Click="Save">
+                        <MenuItem.Icon>
+                            <Image Source="/Slike/SAVE.png" Width="16" Height="16" Stretch="Fill" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="{ns:Loc Open}"  InputGestureText="Ctrl+O" Click="Open">
+                        <MenuItem.Icon>
+                            <Image Source="/Slike/OPEN.png" Width="20" Height="20" />
+                        </MenuItem.Icon>
+                        <MenuItem Header="{ns:Loc Students}" Click="MenuItem_Click">
+                        </MenuItem>
+                        <MenuItem Header="{ns:Loc Courses}" Click="MenuItem_Click_1">
+                        </MenuItem>
+                        <MenuItem Header="{ns:Loc Professors}" Click="MenuItem_Click_2">
+                        </MenuItem>
+                        <MenuItem Header="{ns:Loc Departments}" Click="MenuItem_Click_3">
+                        </MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="{ns:Loc Close}" Click="CloseApp" InputGestureText="Ctrl+C">
+                        <MenuItem.Icon>
+                            <Image Source="/Slike/CLOSE.jpg" Width="16" Height="16" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="{ns:Loc Edit}"  FontWeight="DemiBold">
+                    <MenuItem Header="{ns:Loc Edit}" InputGestureText="Ctrl+E" Click="Edit">
+                        <MenuItem.Icon>
+                            <Image Source="/Slike/PENCIL.png" Width="16" Height="16" Margin="0 0 0 0"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="{ns:Loc Delete}" InputGestureText="Ctrl+D" Click="Delete">
+                        <MenuItem.Icon>
+                            <Image Source="/Slike/THRASHCAN.png" Width="16" Height="16" Margin="0 0 0 0"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="{ns:Loc Help}"  FontWeight="DemiBold">
+                    <MenuItem Header="{ns:Loc About}" InputGestureText="Ctrl+A" Click="About">
+                        <MenuItem.Icon>
+                            <Image Source="/Slike/about.png" Width="18" Height="16" Margin="-1 0 0 0" Stretch="Fill"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="{ns:Loc Localization}" FontWeight="DemiBold">
+                    <MenuItem Header="{ns:Loc Serbian}" Click="MenuItem_Click_Serbian" InputGestureText="Ctrl + R"></MenuItem>
+                    <MenuItem Header="{ns:Loc English}" Click="MenuItem_Click_English" InputGestureText="Ctrl + B"></MenuItem>
+                </MenuItem>
+            </Menu>
+        </Border>
+        <Border  BorderBrush="black" BorderThickness="2,0,2,2" HorizontalAlignment="Stretch" Grid.Row="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400*"/>
+                    <ColumnDefinition Width="400*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <Button Margin="10 0 10 0" Background="Transparent" BorderThickness="0" Click="AddEntityButton_Click">
+                        <Button.ToolTip>
+                            <ToolTip Content="{ns:Loc Add entity}"></ToolTip>
+                        </Button.ToolTip>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                        <Image Source="/Slike/PlusButton.png" Width="16" Height="16" Margin="10 0 10 0"/>
+                    </Button>
+                    <Button Margin="0 0 10 0" Width="36" Background="Transparent"  BorderThickness="0,0,0,0" Click="Edit">
+                        <Button.ToolTip>
+                            <ToolTip Content="{ns:Loc Edit entity}"></ToolTip>
+                        </Button.ToolTip>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                        <Image Source="/Slike/PENCIL.png" Width="16" Height="16" Margin="10 0 10 0"/>
+                    </Button>
+                    <Button  Background="White"  BorderThickness="0,0,0,0" Click="Delete">
+                        <Button.ToolTip>
+                            <ToolTip Content="{ns:Loc Delete entity}"></ToolTip>
+                        </Button.ToolTip>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                        <Image Source="/Slike/THRASHCAN.png" Width="16" Height="16" Margin="10 0 10 0"/>
+                    </Button>
+                    <Button x:Name="PrikaziEntitete" Background="White"  BorderThickness="0,0,0,0" Click="ShowAll">
+                        <Button.ToolTip>
+                            <ToolTip Content="{ns:Loc Show entity}"></ToolTip>
+                        </Button.ToolTip>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                        <Image Source="/Slike/SHOWALL.png" Width="16" Height="16" Margin="10 0 10 0"/>
+                    </Button>
+                </StackPanel>
+                <Grid Grid.Column="1">
+                    <TextBox Name="searchbox" Width="100" Height="16" HorizontalAlignment="Right" Margin="0,0,40,0"/>
+                    <Button Margin="0 0 10 0"  Width="30" Height="26" HorizontalAlignment="Right" Background="White"  BorderThickness="0,0,0,0" Click="Search" >
+                        <Button.ToolTip>
+                            <ToolTip Content="{ns:Loc Search}"></ToolTip>
+                        </Button.ToolTip>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                        <Image Source="/Slike/Search.png" Width="16" Height="16" Margin="5 0 5 0"/>
+                    </Button>
+                </Grid>
+            </Grid>
+        </Border>
+        <Border  BorderBrush="black" HorizontalAlignment="Stretch" Grid.Row="2"  BorderThickness="2,0,2,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="775*"/>
+                    <ColumnDefinition Width="21*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <TabControl x:Name="MainTabControl" SelectionChanged="TabControl_SelectionChanged" Grid.ColumnSpan="2">
+                    <TabItem Header="{ns:Loc Students}" GotFocus="TabItem_GotFocus">
+                        <DataGrid x:Name="dataStudenti" Padding="20,20,20,20" ItemsSource="{Binding Studenti, UpdateSourceTrigger=PropertyChanged , RelativeSource={RelativeSource AncestorType=local:MainWindow}}" SelectedItem="{Binding SelectedStudent, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource AncestorType=local:MainWindow}}"
+                          SelectionMode="Single" AutoGenerateColumns="False" IsReadOnly="True"  HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" SelectionChanged="DataGrid_SelectionChanged" >
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Width="*" Header="{ns:Loc Name}" Binding="{Binding Ime}"/>
+                                <DataGridTextColumn Width="*" Header="{ns:Loc Surname}" Binding="{Binding Prezime}"/>
+                                <DataGridTextColumn  Width="*" Header="{ns:Loc Year of study}" Binding="{Binding TrenutnaGodinaStudija}" />
+                                <DataGridTextColumn Width="*" Header="{ns:Loc Status}" Binding="{Binding Status}" />
+                                <DataGridTextColumn Width="*" Header="{ns:Loc Average grade}" Binding="{Binding ProsecnaOcena}" />
+                                <DataGridTextColumn Width="*" Header="{ns:Loc StudentIndex}" Binding="{Binding Indeks}" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </TabItem>
+                    <TabItem Header="{ns:Loc Professors}" GotFocus="TabItem_GotFocus_1">
+                        <DataGrid  x:Name="dataProfesori" Padding="20,20,20,20" ItemsSource="{Binding Profesori,UpdateSourceTrigger=PropertyChanged , RelativeSource={RelativeSource AncestorType=local:MainWindow}}" SelectedItem="{Binding SelectedProfesor, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource AncestorType=local:MainWindow}}" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" SelectionChanged="DataGrid_SelectionChanged_1">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Width="*" Header="{ns:Loc Name}" Binding="{Binding Ime}" />
+                                <DataGridTextColumn Width="*" Header="{ns:Loc Surname}" Binding="{Binding Prezime}" />
+                                <DataGridTextColumn Width="*" Header="{ns:Loc Title}" Binding="{Binding Zvanje}" />
+                                <DataGridTextColumn Width="*" Header="{ns:Loc E-mail address}" Binding="{Binding EmailAdresa}" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </TabItem>
+                    <TabItem Header="{ns:Loc Courses}" GotFocus="TabItem_GotFocus_2">
+                        <DataGrid x:Name="dataPredmeti" Padding="20,20,20,20" ItemsSource="{Binding Predmeti,UpdateSourceTrigger=PropertyChanged , RelativeSource={RelativeSource AncestorType=local:MainWindow}}" SelectedItem="{Binding SelectedPredmet, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource AncestorType=local:MainWindow}}" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Extended" SelectionChanged="DataGrid_SelectionChanged_2">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Width="*" Header="{ns:Loc Code}" Binding="{Binding Sifra}" />
+                                <DataGridTextColumn Width="*" Header="{ns:Loc NameNaz}" Binding="{Binding Naziv}" />
+                                <DataGridTextColumn Width="*" Header="{ns:Loc Number of ESPB points}" Binding="{Binding Espb}" />
+                                <DataGridTextColumn Width="*" Header="{ns:Loc Year}" Binding="{Binding GodinaStudija}" />
+                                <DataGridTextColumn Width="*" Header="{ns:Loc Semester}" Binding="{Binding Semestar}" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </TabItem>
+                    <TabItem Header="{ns:Loc Departments}">
+                        <DataGrid x:Name="dataKatedre" Padding="20,20,20,20" ItemsSource="{Binding Katedre,UpdateSourceTrigger=PropertyChanged , RelativeSource={RelativeSource AncestorType=local:MainWindow}}" SelectedItem="{Binding SelectedKatedra, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource AncestorType=local:MainWindow}}" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" SelectionChanged="DataGrid_SelectionChanged_3">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Width="*" Header="{ns:Loc Code}" Binding="{Binding Sifra}" />
+                                <DataGridTextColumn Width="*" Header="{ns:Loc NameNaz}" Binding="{Binding Naziv}" />
+                                <DataGridTextColumn Width="*" Header="{ns:Loc Boss id}" Binding="{Binding SefId}" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </TabItem>
+                </TabControl>
+                <Button Grid.Row="1" Width="30" HorizontalAlignment="Center" Margin="100,0,0,0" Content=">" Click="Button_Click">
+                </Button>
+                <Button Grid.Row="1" Width="30" HorizontalAlignment="Center" Margin="0,0,100,0" Content="&lt;" Click="Button_Click_1">
+                </Button>
+            </Grid>
+        </Border>
+        <Border  BorderBrush="black" BorderThickness="2" HorizontalAlignment="Stretch" Grid.Row="3">
+            <Grid  Grid.Row="3" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400*"/>
+                    <ColumnDefinition Width="400*"/>
+                </Grid.ColumnDefinitions>
+                <Label Name="statusbar" Grid.Column="0" FontWeight="DemiBold" FontSize="13" VerticalAlignment="Center">Studentska služba
+                </Label>
+                <TextBlock Grid.Column="1" x:Name="dateTextBlock" FontSize="13" FontWeight="DemiBold" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

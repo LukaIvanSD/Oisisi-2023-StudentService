@@ -1,0 +1,2 @@
+k1|Katedra za informatiku|1
+k2|Katedra za matematiku|4

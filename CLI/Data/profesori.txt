@@ -1,0 +1,20 @@
+Dragoslava|Raspopović|1.4.1984.|1. MAJ 22 BABUŠNICA, Crna Gora|+38168734572|dragoslava.raspopovic@uns.ac.rs|276681361|docent|8|0
+Stojko|Prvanović|14.2.1984.|MIRE ALEČKOVIĆ 67 VELIKA REMETA, Srbija|+38164533567|stojko.prvanovic@uns.ac.rs|403390402|redovni profesor|29|1
+Budimir|Talović|13.11.1993.|DARINKE BOROVIĆ 40 LJUBINIĆ, Bosna i Hercegovina|+38163433336|budimir.talovic@uns.ac.rs|176283015|redovni profesor|25|1
+Dobrica|Batrović|31.5.1977.|MIJE ALEKSIĆA 30 DONjA VREŽINA, Srbija|+38163651140|dobrica.batrovic@uns.ac.rs|39606943|docent|26|0
+Arsenije|Balabanović|4.11.1985.|SVETOMIRA MARIĆA 59 DONjI LjUBEŠ, Srbija|+38166421759|arsenije.balabanovic@uns.ac.rs|3296960|docent|16|0
+Rastko|Bučevac|31.8.1968.|STAROVLAŠKA 88 ČAJETINA, Srbija|+38166705409|rastko.bucevac@uns.ac.rs|520064301|vanredni profesor|6|0
+Bogdanka|Ložnjaković|26.11.1971.|BOJANSKA 39 SKORICA, Bosna i Hercegovina|+38163904215|bogdanka.loznjakovic@uns.ac.rs|306180424|vanredni profesor|14|1
+Veljko|Miočinović|24.6.1970.|NjEGOŠEVA 20 LEBANE, Srbija|+38169997020|veljko.miocinovic@uns.ac.rs|125955509|vanredni profesor|8|0
+Igor|Krečković|17.5.1986.|JORDANA STOJANOVIĆA 5 ČAPLjINAC, Bosna i Hercegovina|+3816101030|igor.kreckovic@uns.ac.rs|973133377|redovni profesor|5|1
+Steva|Iljanović|15.7.1973.|KARAĐORĐEVA 1 RAKINAC, Srbija|+38164163699|steva.iljanovic@uns.ac.rs|914012289|vanredni profesor|9|0
+Jevrosima|Toskić|17.10.1971.|ČUČUŠKA 2 KLOKA, Bosna i Hercegovina|+38165326720|jevrosima.toskic@uns.ac.rs|800155523|redovni profesor|11|1
+Aćim|Čaluković|25.2.1991.|IVE ANDRIĆA 25 BUNUŠKI ČIFLUK, Bosna i Hercegovina|+38165602843|acim.calukovic@uns.ac.rs|884798807|docent|5|0
+Gaga|Dabarčić|14.12.1965.|GORANA RAIČEVIĆA 97 KOVIOCI, Crna Gora|+38163466502|gaga.dabarcic@uns.ac.rs|263457325|vanredni profesor|11|1
+Stevanija|Graonić|6.6.1962.|VASE STAJIĆA 8 ADA, Bosna i Hercegovina|+38166834413|stevanija.graonic@uns.ac.rs|392506493|docent|5|1
+Spomenko|Oblaković|31.10.1980.|PARTIZANSKA 40 PIROT, Bosna i Hercegovina|+3816757415|spomenko.oblakovic@uns.ac.rs|963528130|redovni profesor|15|0
+Jakov|Čvorkov|8.8.1982.|FUTOŠKA 49 KOVAČEVAC, Crna Gora|+38169416210|jakov.cvorkov@uns.ac.rs|955425450|docent|10|0
+Leonora|Đurikin|17.11.1980.|BANjALUČKA 57 TEMERIN, Srbija|+38167769265|leonora.durikin@uns.ac.rs|982033521|docent|16|0
+Stojmen|Banjalić|29.7.1973.|ČESTELINSKA 87 VRANjE, Srbija|+3816103067|stojmen.banjalic@uns.ac.rs|284423009|redovni profesor|12|1
+Pauna|Jojčić|19.11.1960.|MILENTIJA POPOVIĆA 98 VRBAS, Srbija|+38167157490|pauna.jojcic@uns.ac.rs|999930819|docent|19|0
+Miloje|Serdarević|16.7.1993.|VODNIKA IVANA VASOJEVIĆA 57 HUM, Srbija|+38169893744|miloje.serdarevic@uns.ac.rs|904283709|redovni profesor|23|1

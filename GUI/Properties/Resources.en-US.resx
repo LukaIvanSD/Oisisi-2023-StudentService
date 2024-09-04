@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Add department" xml:space="preserve">
+    <value>Add department</value>
+  </data>
+  <data name="Add entity" xml:space="preserve">
+    <value>Add entity</value>
+  </data>
+  <data name="Add professor" xml:space="preserve">
+    <value>Add professor</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="AddStudent" xml:space="preserve">
+    <value>Add student</value>
+  </data>
+  <data name="ADDSUBJECT" xml:space="preserve">
+    <value>Add course</value>
+  </data>
+  <data name="Authors" xml:space="preserve">
+    <value>Authors:</value>
+  </data>
+  <data name="Average grade" xml:space="preserve">
+    <value>GPA:</value>
+  </data>
+  <data name="Boss id" xml:space="preserve">
+    <value>Main professor ID:</value>
+  </data>
+  <data name="Broj espb:" xml:space="preserve">
+    <value>Number of ECTS:</value>
+  </data>
+  <data name="Budzet" xml:space="preserve">
+    <value>Schoolarship</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Code:</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact phone:</value>
+  </data>
+  <data name="Course code" xml:space="preserve">
+    <value>Course code</value>
+  </data>
+  <data name="Course name" xml:space="preserve">
+    <value>Course name</value>
+  </data>
+  <data name="Courses" xml:space="preserve">
+    <value>Courses</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Date of birth" xml:space="preserve">
+    <value>Date of birth:</value>
+  </data>
+  <data name="Datum*" xml:space="preserve">
+    <value>Date*:</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Delete entity" xml:space="preserve">
+    <value>Delete entity</value>
+  </data>
+  <data name="Department ID" xml:space="preserve">
+    <value>Department ID:</value>
+  </data>
+  <data name="Departments" xml:space="preserve">
+    <value>Departments</value>
+  </data>
+  <data name="Dodaj predmet" xml:space="preserve">
+    <value>Add course</value>
+  </data>
+  <data name="E-mail address" xml:space="preserve">
+    <value>E-mail address:</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Edit course" xml:space="preserve">
+    <value>Edit course</value>
+  </data>
+  <data name="Edit department" xml:space="preserve">
+    <value>Edit department</value>
+  </data>
+  <data name="Edit entity" xml:space="preserve">
+    <value>Edit entity</value>
+  </data>
+  <data name="Edit professor" xml:space="preserve">
+    <value>Edit professor</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="ESPB" xml:space="preserve">
+    <value>ECTS</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Godina slusanja:" xml:space="preserve">
+    <value>Year:</value>
+  </data>
+  <data name="Godina upisa" xml:space="preserve">
+    <value>Year of admission:</value>
+  </data>
+  <data name="Godine staza" xml:space="preserve">
+    <value>Years of experience:</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="I (prva)" xml:space="preserve">
+    <value>Freshman</value>
+  </data>
+  <data name="II (druga)" xml:space="preserve">
+    <value>Sophmore</value>
+  </data>
+  <data name="III (treća)" xml:space="preserve">
+    <value>Junior</value>
+  </data>
+  <data name="Informacije" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="IV (četvrta)" xml:space="preserve">
+    <value>Senior</value>
+  </data>
+  <data name="Letnji" xml:space="preserve">
+    <value>Spring</value>
+  </data>
+  <data name="Licna karta" xml:space="preserve">
+    <value>ID card:</value>
+  </data>
+  <data name="Localization" xml:space="preserve">
+    <value>Localization</value>
+  </data>
+  <data name="Nacin finansiranja" xml:space="preserve">
+    <value>Student status:</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="NameNaz" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="Naziv*" xml:space="preserve">
+    <value>Course name*:</value>
+  </data>
+  <data name="Nepolozeni" xml:space="preserve">
+    <value>Unpassed courses</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Number of ESPB points" xml:space="preserve">
+    <value>Number of ECTS points:</value>
+  </data>
+  <data name="Ocena" xml:space="preserve">
+    <value>Grade</value>
+  </data>
+  <data name="Ocena*" xml:space="preserve">
+    <value>Grade*:</value>
+  </data>
+  <data name="Odaberi profesora" xml:space="preserve">
+    <value>Choose the professor</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="Polozeni" xml:space="preserve">
+    <value>Passed courses</value>
+  </data>
+  <data name="Ponisti ocenu" xml:space="preserve">
+    <value>Nullify grade</value>
+  </data>
+  <data name="Postavi za sefa" xml:space="preserve">
+    <value>Set as a main prof.</value>
+  </data>
+  <data name="Predmeti" xml:space="preserve">
+    <value>Courses</value>
+  </data>
+  <data name="Prikazi predmete za katedru" xml:space="preserve">
+    <value>Show courses for department</value>
+  </data>
+  <data name="Prikazi profesore" xml:space="preserve">
+    <value>Show professors</value>
+  </data>
+  <data name="Profesori koji predaju izabranom studentu:" xml:space="preserve">
+    <value>Professors who teach selected student:</value>
+  </data>
+  <data name="Profesori na katedri" xml:space="preserve">
+    <value>Professors on department:</value>
+  </data>
+  <data name="Professor ID" xml:space="preserve">
+    <value>Professor ID:</value>
+  </data>
+  <data name="Professors" xml:space="preserve">
+    <value>Professors</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Rights" xml:space="preserve">
+    <value>© 2023 Student services. All rights reserved.</value>
+  </data>
+  <data name="Samofinansirajuci" xml:space="preserve">
+    <value>Tution fee</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Semester" xml:space="preserve">
+    <value>Semester:</value>
+  </data>
+  <data name="Semicolon" xml:space="preserve">
+    <value>:</value>
+  </data>
+  <data name="Serbian" xml:space="preserve">
+    <value>Serbian</value>
+  </data>
+  <data name="Show entity" xml:space="preserve">
+    <value>Show entity</value>
+  </data>
+  <data name="Show professors for department" xml:space="preserve">
+    <value>Show professors for department</value>
+  </data>
+  <data name="ShowProf" xml:space="preserve">
+    <value>Show Professors of Selected Student</value>
+  </data>
+  <data name="ShowStudentsForProfessor" xml:space="preserve">
+    <value>Show all students for professor</value>
+  </data>
+  <data name="Sifra*" xml:space="preserve">
+    <value>Course code*:</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="Student union" xml:space="preserve">
+    <value>Student services</value>
+  </data>
+  <data name="Studenti koji su položili jedan a nisu drugi predmet" xml:space="preserve">
+    <value>Students that passed one course but not the other:</value>
+  </data>
+  <data name="Studenti kojima profesor predaje:" xml:space="preserve">
+    <value>All students for professor</value>
+  </data>
+  <data name="StudentIndex" xml:space="preserve">
+    <value>Student Index:</value>
+  </data>
+  <data name="Students" xml:space="preserve">
+    <value>Students</value>
+  </data>
+  <data name="Students on course" xml:space="preserve">
+    <value>Students on course</value>
+  </data>
+  <data name="Students on course:" xml:space="preserve">
+    <value>Students on course:</value>
+  </data>
+  <data name="Studentska služba" xml:space="preserve">
+    <value>Student services</value>
+  </data>
+  <data name="Surname" xml:space="preserve">
+    <value>Surname:</value>
+  </data>
+  <data name="Svi predmeti svih profesora sa izbarane katedre:" xml:space="preserve">
+    <value>All courses from every professor of selected department:</value>
+  </data>
+  <data name="Take exam" xml:space="preserve">
+    <value>Take exam</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="Ukloni predmet" xml:space="preserve">
+    <value>Remove course</value>
+  </data>
+  <data name="Unos ocene" xml:space="preserve">
+    <value>Give a grade</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Verzija 1.0</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Year:</value>
+  </data>
+  <data name="Year of study" xml:space="preserve">
+    <value>Year of study:</value>
+  </data>
+  <data name="Zimski" xml:space="preserve">
+    <value>Fall</value>
+  </data>
+  <data name="Zvanje" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+</root>

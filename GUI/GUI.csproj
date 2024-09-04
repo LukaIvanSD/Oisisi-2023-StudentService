@@ -1,0 +1,80 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="about.png" />
+    <None Remove="CLOSE.jpg" />
+    <None Remove="minus1.png" />
+    <None Remove="OPEN.png" />
+    <None Remove="PENCIL.png" />
+    <None Remove="PLUS.jpg" />
+    <None Remove="Plus1.png" />
+    <None Remove="PlusButton.png" />
+    <None Remove="SAVE.png" />
+    <None Remove="Search.png" />
+    <None Remove="SHOWALL.png" />
+    <None Remove="Slike\about.png" />
+    <None Remove="THRASHCAN.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Slike\minus1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Slike\Plus1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Slike\SHOWALL.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CLI\CLI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Slike\about.png" />
+    <Resource Include="Slike\CLOSE.jpg" />
+    <Resource Include="Slike\OPEN.png" />
+    <Resource Include="Slike\PENCIL.png" />
+    <Resource Include="Slike\PLUS.jpg" />
+    <Resource Include="Slike\PlusButton.png" />
+    <Resource Include="Slike\SAVE.png" />
+    <Resource Include="Slike\Search.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Slike\THRASHCAN.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.en-US.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.en-US.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

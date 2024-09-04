@@ -1,0 +1,22 @@
+﻿<Window x:Class="GUI.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ns="clr-namespace:GUI.Localization"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        PreviewKeyDown="Window_PreviewKeyDown"
+        Title="{ns:Loc About}" Height="450" Width="600">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="{ns:Loc Student union}" FontWeight="Bold" FontSize="18" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+            <TextBlock Text="{ns:Loc Version}" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+            <TextBlock Text="{ns:Loc Authors}" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+            <TextBlock Text="Luka Ivanišević" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+            <TextBlock Text="Luka Vranješević" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+            <TextBlock Text="{ns:Loc Rights}" Margin="0,0,0,10"/>
+            <Button Content="{ns:Loc Close}" Width="80" Height="25" Click="Close_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

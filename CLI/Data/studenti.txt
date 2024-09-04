@@ -1,0 +1,21 @@
+Pantelija|Škrobović|12.1.2001.|1. MAJ 22 BABUŠNICA, Crna Gora|+38161706971|skrobovic.ra.0.2021@uns.ac.rs|RA 0/2021|4|S|6
+Caka|Veselić|24.1.2001.|MIRE ALEČKOVIĆ 67 VELIKA REMETA, Srbija|+38165391091|veselic.ra.1.2021@uns.ac.rs|RA 1/2021|4|B|10
+Katarina|Kovrlija|1.5.1998.|DARINKE BOROVIĆ 40 LjUBINIĆ, Bosna i Hercegovina|+3816749564|kovrlija.ra.2.2021@uns.ac.rs|RA 2/2021|4|B|7
+Đura|Zarubica|21.7.1994.|MIJE ALEKSIĆA 30 DONjA VREŽINA, Srbija|+38169584327|zarubica.ra.3.2021@uns.ac.rs|RA 3/2021|4|S|10
+Elena|Vilenica|6.10.2003.|SVETOMIRA MARIĆA 59 DONjI LjUBEŠ, Srbija|+38165343994|vilenica.ra.4.2021@uns.ac.rs|RA 4/2021|4|S|7.5
+Fotije|Jelesijević|27.2.1994.|STAROVLAŠKA 88 ČAJETINA, Srbija|+38165121848|jelesijevic.ra.5.2021@uns.ac.rs|RA 5/2021|4|S|NaN
+Strahinja|Otržan|29.3.2004.|BOJANSKA 39 SKORICA, Bosna i Hercegovina|+38165826247|otrzan.ra.6.2021@uns.ac.rs|RA 6/2021|4|B|NaN
+Ekatarina|Putica|20.12.1998.|NjEGOŠEVA 20 LEBANE, Srbija|+38169233526|putica.ra.7.2021@uns.ac.rs|RA 7/2021|1|B|NaN
+Želimirka|Viduljević|19.7.2001.|JORDANA STOJANOVIĆA 5 ČAPLjINAC, Bosna i Hercegovina|+38162535541|viduljevic.ra.8.2021@uns.ac.rs|RA 8/2021|3|B|NaN
+Violeta|Roljević|24.6.2004.|KARAĐORĐEVA 1 RAKINAC, Srbija|+38161267718|roljevic.ra.9.2021@uns.ac.rs|RA 9/2021|2|S|NaN
+Đura|Jocin|9.3.1994.|ČUČUŠKA 2 KLOKA, Bosna i Hercegovina|+38161156705|jocin.ra.10.2021@uns.ac.rs|RA 10/2021|3|S|NaN
+Srpko|Milenović|24.9.2000.|IVE ANDRIĆA 25 BUNUŠKI ČIFLUK, Bosna i Hercegovina|+38161553412|milenovic.ra.11.2021@uns.ac.rs|RA 11/2021|4|S|NaN
+Adam|Grnčarski|25.7.2000.|GORANA RAIČEVIĆA 97 KOVIOCI, Crna Gora|+38168476604|grncarski.ra.12.2021@uns.ac.rs|RA 12/2021|1|B|NaN
+Tanasije|Dobraš|4.12.1995.|VASE STAJIĆA 8 ADA, Bosna i Hercegovina|+38169865396|dobras.ra.13.2021@uns.ac.rs|RA 13/2021|3|S|NaN
+Kosara|Milišić|5.12.2004.|PARTIZANSKA 40 PIROT, Bosna i Hercegovina|+38163078887|milisic.ra.14.2021@uns.ac.rs|RA 14/2021|4|B|NaN
+Mirko|Zavišin|23.7.1999.|FUTOŠKA 49 KOVAČEVAC, Crna Gora|+38164396128|zavisin.ra.15.2021@uns.ac.rs|RA 15/2021|4|S|NaN
+Glorija|Popmihajlov|17.2.1996.|BANjALUČKA 57 TEMERIN, Srbija|+38168674154|popmihajlov.ra.16.2021@uns.ac.rs|RA 16/2021|1|B|NaN
+Cviko|Kekić|23.5.2004.|ČESTELINSKA 87 VRANjE, Srbija|+38169653668|kekic.ra.17.2021@uns.ac.rs|RA 17/2021|2|S|NaN
+Dobrašin|Sečanski|8.9.1998.|MILENTIJA POPOVIĆA 98 VRBAS, Srbija|+38169698207|secanski.ra.18.2021@uns.ac.rs|RA 18/2021|2|B|NaN
+Pajka|Čičovački|13.3.2004.|VODNIKA IVANA VASOJEVIĆA 57 HUM, Srbija|+38164159397|cicovacki.ra.19.2021@uns.ac.rs|RA 19/2021|1|S|NaN
+asdasd|dasd|12.12.2002.|ra 2 ra, ra|dasda|sadasd|RA 125/2021|1|B|NaN

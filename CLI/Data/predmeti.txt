@@ -1,0 +1,20 @@
+43|Tehnologije i alati u mašinskom učenju|Letnji|4|8|18
+79|Napredni algoritmi i strukture podataka|Zimski|4|6|0
+76|Testiranje softvera|Letnji|1|9|0
+94|Specifikacija i modeliranje softvera|Letnji|3|4|3
+12|Uvod u informacione tehnologije u geomatici|Letnji|3|8|0
+23|Tehnologije i sistemi eUprave|Zimski|1|4|1
+60|Klijentske web tehnologije|Zimski|3|5|5
+75|Internet mreže|Letnji|1|7|6
+67|XML i veb servisi|Letnji|2|10|1
+51|Metodologije razvoja softvera|Zimski|3|4|-1
+74|Uvod u informacione tehnologije u geomatici|Zimski|3|8|3
+17|Poslovna informatika|Letnji|3|10|4
+8|Mašinsko učenje|Zimski|3|10|8
+19|Soft kompjuting|Letnji|1|10|2
+24|Specifikacija i modeliranje softvera|Zimski|2|6|6
+38|Informaciona bezbednost|Zimski|3|7|4
+9|Serverske web tehnologije|Zimski|4|4|1
+37|Objektno orijentisano programiranje 1|Zimski|2|7|8
+5|Servisno orijentisane arhitekture|Letnji|2|7|6
+62|Sistemi bazirani na znanju|Letnji|3|4|6

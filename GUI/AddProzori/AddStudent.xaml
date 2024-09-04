@@ -1,0 +1,85 @@
+﻿<Window x:Class="GUI.AddStudent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI" xmlns:dto="clr-namespace:GUI.DTO" d:DataContext="{d:DesignInstance Type=dto:StudentDTO}"
+        xmlns:ns="clr-namespace:GUI.Localization"
+        mc:Ignorable="d"
+        PreviewKeyDown="Window_PreviewKeyDown"
+        Title="{ns:Loc AddStudent}" Height="450" Width="600">
+    <Window.Resources>
+        <ControlTemplate x:Key="ValidationTemplate">
+            <StackPanel>
+                <!-- Placeholder for the TextBox itself -->
+                <AdornedElementPlaceholder x:Name="textBox" />
+                <TextBlock Text="{Binding [0].ErrorContent}" Foreground="Red" />
+            </StackPanel>
+
+        </ControlTemplate>
+    </Window.Resources>
+    <Grid  Margin="20,0,20,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Label Content ="{ns:Loc Name}" Grid.Row="0" VerticalAlignment="Center">
+        </Label>
+        <TextBox  x:Name="textBox1" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" MinWidth="150" Height="20" Text="{Binding Path=Student.Ime, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, RelativeSource={RelativeSource AncestorType=local:AddStudent}}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}"/>
+        <Label Content ="{ns:Loc Surname}" Grid.Row="1" VerticalAlignment="Center">
+        </Label>
+        <TextBox x:Name="textBox2" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Width="150" Height="20" Text="{Binding Path=Student.Prezime, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, RelativeSource={RelativeSource AncestorType=local:AddStudent}}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}"/>
+        <Label Content ="{ns:Loc Date of birth}" Grid.Row="2" VerticalAlignment="Center">
+        </Label>
+        <TextBox x:Name="textBox3" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Width="150" Height="20" Text="{Binding Path=Student.Datum, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, RelativeSource={RelativeSource AncestorType=local:AddStudent}}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}"/>
+        <Label Content ="{ns:Loc Address}" Grid.Row="3" VerticalAlignment="Center">
+        </Label>
+        <TextBox x:Name="textBox4" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" Width="150" Height="20" Text="{Binding Path=Student.Adresa, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, RelativeSource={RelativeSource AncestorType=local:AddStudent}}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}"/>
+        <Label Content ="{ns:Loc Contact}" Grid.Row="4" VerticalAlignment="Center">
+        </Label>
+        <TextBox x:Name="textBox5" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" Width="150" Height="20" Text="{Binding Path=Student.KontaktTelefon, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, RelativeSource={RelativeSource AncestorType=local:AddStudent}}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}"/>
+        <Label Content ="{ns:Loc E-mail address}" Grid.Row="5" VerticalAlignment="Center">
+        </Label>
+        <TextBox x:Name="textBox6" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" Width="150" Height="20"  Text="{Binding Path=Student.EmailAdresa, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, RelativeSource={RelativeSource AncestorType=local:AddStudent}}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}"/>
+        <Label Content ="{ns:Loc StudentIndex}" Grid.Row="6" VerticalAlignment="Center">
+        </Label>
+        <TextBox x:Name="textBox7" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Center" Width="150" Height="20" Text="{Binding Path=Student.Indeks, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, RelativeSource={RelativeSource AncestorType=local:AddStudent}}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}"/>
+        <Label Content ="{ns:Loc Godina upisa}" Grid.Row="7" VerticalAlignment="Center">
+        </Label>
+        <TextBox x:Name="textBox8" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" Width="150" Height="20" Text="{Binding Path=Student.GodinaUpisa, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, RelativeSource={RelativeSource AncestorType=local:AddStudent}}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}"/>
+        <Label Content ="{ns:Loc Year of study}" Grid.Row="8" VerticalAlignment="Center">
+        </Label>
+        <ComboBox x:Name="comboBox1" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Center" Width="150" Height="23"  SelectedIndex="{Binding Path=Student.TrenutnaGodinaStudijaCombo, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, RelativeSource={RelativeSource AncestorType=local:AddStudent}}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}">
+            <ComboBoxItem Content ="{ns:Loc I (prva)}" ></ComboBoxItem>
+            <ComboBoxItem Content ="{ns:Loc II (druga)}"></ComboBoxItem>
+            <ComboBoxItem Content ="{ns:Loc III (treća)}"></ComboBoxItem>
+            <ComboBoxItem Content ="{ns:Loc IV (četvrta)}"></ComboBoxItem>
+        </ComboBox>
+        <Label Content ="{ns:Loc Status}" Grid.Row="9" VerticalAlignment="Center">
+        </Label>
+        <ComboBox x:Name="comboBox2" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Center" Width="150" Height="23" SelectedIndex="{Binding Path=Student.StatusCombo, UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True, RelativeSource={RelativeSource AncestorType=local:AddStudent}}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}">
+            <ComboBoxItem Content ="{ns:Loc Budzet}"></ComboBoxItem>
+            <ComboBoxItem Content ="{ns:Loc Samofinansirajuci}"></ComboBoxItem>
+        </ComboBox>
+        <Button Content ="{ns:Loc Confirm}" x:Name="Add"  Grid.Row="10" HorizontalAlignment="Right" Padding="10,0,10,2" Margin="0,10,30,10" Click="ADD">
+        </Button>
+        <Button Content ="{ns:Loc Cancel}" Grid.Row="10" Grid.Column="1" HorizontalAlignment="Left" Padding="10,0,10,2" Margin="30,10,0,10" Click="Close">
+        </Button>
+
+
+
+    </Grid>
+</Window>
